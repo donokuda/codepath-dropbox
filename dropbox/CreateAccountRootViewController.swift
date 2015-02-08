@@ -22,11 +22,7 @@ class CreateAccountRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func dismissToCreateAccountRoot(segue: UIStoryboardSegue) {
-    
-    }
-    
-    @IBAction func dismissToSignin(segue: UIStoryboardSegue) {
+    @IBAction func dismissToLogoutScreen(segue: UIStoryboardSegue) {
     }
     /*
     // MARK: - Navigation

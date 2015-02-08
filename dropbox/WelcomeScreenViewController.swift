@@ -1,27 +1,26 @@
 //
-//  SignInRootViewController.swift
+//  WelcomeScreenViewController.swift
 //  dropbox
 //
-//  Created by Don Okuda on 2/7/15.
+//  Created by Don Okuda on 2/8/15.
 //  Copyright (c) 2015 Don Okuda. All rights reserved.
 //
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class WelcomeScreenViewController: UIViewController {
 
+    @IBOutlet weak var welcomeScrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        performSegueWithIdentifier("signInSegue", sender: self)
-        // Do any additional setup after loading the view.
+        
+        welcomeScrollView.contentSize = CGSize(width: 960, height: welcomeScrollView.bounds.size.height)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -32,7 +31,4 @@ class SignInRootViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    @IBAction func dismissToLogoutScreen(segue: UIStoryboardSegue) {
-    }
 }

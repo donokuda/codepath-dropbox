@@ -1,20 +1,24 @@
 //
-//  SignInRootViewController.swift
+//  FileDetailsViewController.swift
 //  dropbox
 //
-//  Created by Don Okuda on 2/7/15.
+//  Created by Don Okuda on 2/8/15.
 //  Copyright (c) 2015 Don Okuda. All rights reserved.
 //
 
 import UIKit
 
-class SignInRootViewController: UIViewController {
+class FileDetailsViewController: UIViewController {
 
+    @IBOutlet weak var detailsView: UIView!
+    @IBOutlet weak var favoritedButtonImage: UIImageView!
+    @IBOutlet weak var moreButton: UIBarButtonItem!
+    @IBOutlet weak var favoriteButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        performSegueWithIdentifier("signInSegue", sender: self)
-        // Do any additional setup after loading the view.
+        detailsView.hidden = true
+        favoritedButtonImage.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,6 +37,11 @@ class SignInRootViewController: UIViewController {
     }
     */
 
-    @IBAction func dismissToLogoutScreen(segue: UIStoryboardSegue) {
+    @IBAction func moreButtonTapped(sender: AnyObject) {
+        detailsView.hidden = !detailsView.hidden
+    }
+    
+    @IBAction func favoriteButtonTapped(sender: AnyObject) {
+        favoritedButtonImage.hidden = !favoritedButtonImage.hidden
     }
 }

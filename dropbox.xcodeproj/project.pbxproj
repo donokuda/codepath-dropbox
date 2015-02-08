@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B026B55E1A880F7300BB94CA /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026B55D1A880F7300BB94CA /* WelcomeScreenViewController.swift */; };
+		B026B5601A88236100BB94CA /* FileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B026B55F1A88236100BB94CA /* FileDetailsViewController.swift */; };
 		B04CCCE71A86AF9E00E425BA /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCE61A86AF9E00E425BA /* CreateAccountViewController.swift */; };
 		B04CCCE91A86B2A100E425BA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCE81A86B2A100E425BA /* SignInViewController.swift */; };
 		B04CCCEB1A86B90D00E425BA /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCEA1A86B90D00E425BA /* TermsViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B026B55D1A880F7300BB94CA /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		B026B55F1A88236100BB94CA /* FileDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
 		B04CCCE61A86AF9E00E425BA /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		B04CCCE81A86B2A100E425BA /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B04CCCEA1A86B90D00E425BA /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		B0AF9E5E1A81C816001926BC /* dropbox */ = {
 			isa = PBXGroup;
 			children = (
+				B026B55D1A880F7300BB94CA /* WelcomeScreenViewController.swift */,
 				B0AF9E611A81C816001926BC /* AppDelegate.swift */,
 				B0AF9E631A81C816001926BC /* ViewController.swift */,
 				B04CCCE61A86AF9E00E425BA /* CreateAccountViewController.swift */,
@@ -94,6 +99,7 @@
 				B04CCCEA1A86B90D00E425BA /* TermsViewController.swift */,
 				B04CCCEC1A86C1DA00E425BA /* SettingsViewController.swift */,
 				B0AF9E651A81C816001926BC /* Main.storyboard */,
+				B026B55F1A88236100BB94CA /* FileDetailsViewController.swift */,
 				B0C46C691A86A7A60097A630 /* CreateAccountRootViewController.swift */,
 				B0C46C6B1A86A7E60097A630 /* SignInRootViewController.swift */,
 				B0AF9E681A81C816001926BC /* Images.xcassets */,
@@ -231,7 +237,9 @@
 				B04CCCE91A86B2A100E425BA /* SignInViewController.swift in Sources */,
 				B0C46C6A1A86A7A60097A630 /* CreateAccountRootViewController.swift in Sources */,
 				B0AF9E641A81C816001926BC /* ViewController.swift in Sources */,
+				B026B55E1A880F7300BB94CA /* WelcomeScreenViewController.swift in Sources */,
 				B0AF9E621A81C816001926BC /* AppDelegate.swift in Sources */,
+				B026B5601A88236100BB94CA /* FileDetailsViewController.swift in Sources */,
 				B04CCCEB1A86B90D00E425BA /* TermsViewController.swift in Sources */,
 				B04CCCED1A86C1DA00E425BA /* SettingsViewController.swift in Sources */,
 			);
