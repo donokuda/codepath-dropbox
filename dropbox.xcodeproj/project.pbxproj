@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B04CCCE71A86AF9E00E425BA /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCE61A86AF9E00E425BA /* CreateAccountViewController.swift */; };
+		B04CCCE91A86B2A100E425BA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCE81A86B2A100E425BA /* SignInViewController.swift */; };
+		B04CCCEB1A86B90D00E425BA /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCEA1A86B90D00E425BA /* TermsViewController.swift */; };
+		B04CCCED1A86C1DA00E425BA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCCEC1A86C1DA00E425BA /* SettingsViewController.swift */; };
 		B0AF9E621A81C816001926BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF9E611A81C816001926BC /* AppDelegate.swift */; };
 		B0AF9E641A81C816001926BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF9E631A81C816001926BC /* ViewController.swift */; };
 		B0AF9E671A81C816001926BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0AF9E651A81C816001926BC /* Main.storyboard */; };
 		B0AF9E691A81C816001926BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0AF9E681A81C816001926BC /* Images.xcassets */; };
-		B0AF9E6C1A81C816001926BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0AF9E6A1A81C816001926BC /* LaunchScreen.xib */; };
 		B0AF9E781A81C816001926BC /* dropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF9E771A81C816001926BC /* dropboxTests.swift */; };
+		B0C46C6A1A86A7A60097A630 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C46C691A86A7A60097A630 /* CreateAccountRootViewController.swift */; };
+		B0C46C6C1A86A7E60097A630 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C46C6B1A86A7E60097A630 /* SignInRootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B04CCCE61A86AF9E00E425BA /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		B04CCCE81A86B2A100E425BA /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B04CCCEA1A86B90D00E425BA /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
+		B04CCCEC1A86C1DA00E425BA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B0AF9E5C1A81C816001926BC /* dropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dropbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AF9E601A81C816001926BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0AF9E611A81C816001926BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0AF9E631A81C816001926BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0AF9E661A81C816001926BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0AF9E681A81C816001926BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B0AF9E6B1A81C816001926BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B0AF9E711A81C816001926BC /* dropboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dropboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0AF9E761A81C816001926BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0AF9E771A81C816001926BC /* dropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropboxTests.swift; sourceTree = "<group>"; };
+		B0C46C691A86A7A60097A630 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
+		B0C46C6B1A86A7E60097A630 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +89,14 @@
 			children = (
 				B0AF9E611A81C816001926BC /* AppDelegate.swift */,
 				B0AF9E631A81C816001926BC /* ViewController.swift */,
+				B04CCCE61A86AF9E00E425BA /* CreateAccountViewController.swift */,
+				B04CCCE81A86B2A100E425BA /* SignInViewController.swift */,
+				B04CCCEA1A86B90D00E425BA /* TermsViewController.swift */,
+				B04CCCEC1A86C1DA00E425BA /* SettingsViewController.swift */,
 				B0AF9E651A81C816001926BC /* Main.storyboard */,
+				B0C46C691A86A7A60097A630 /* CreateAccountRootViewController.swift */,
+				B0C46C6B1A86A7E60097A630 /* SignInRootViewController.swift */,
 				B0AF9E681A81C816001926BC /* Images.xcassets */,
-				B0AF9E6A1A81C816001926BC /* LaunchScreen.xib */,
 				B0AF9E5F1A81C816001926BC /* Supporting Files */,
 			);
 			path = dropbox;
@@ -193,7 +208,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0AF9E671A81C816001926BC /* Main.storyboard in Resources */,
-				B0AF9E6C1A81C816001926BC /* LaunchScreen.xib in Resources */,
 				B0AF9E691A81C816001926BC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +226,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04CCCE71A86AF9E00E425BA /* CreateAccountViewController.swift in Sources */,
+				B0C46C6C1A86A7E60097A630 /* SignInRootViewController.swift in Sources */,
+				B04CCCE91A86B2A100E425BA /* SignInViewController.swift in Sources */,
+				B0C46C6A1A86A7A60097A630 /* CreateAccountRootViewController.swift in Sources */,
 				B0AF9E641A81C816001926BC /* ViewController.swift in Sources */,
 				B0AF9E621A81C816001926BC /* AppDelegate.swift in Sources */,
+				B04CCCEB1A86B90D00E425BA /* TermsViewController.swift in Sources */,
+				B04CCCED1A86C1DA00E425BA /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +262,6 @@
 				B0AF9E661A81C816001926BC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B0AF9E6A1A81C816001926BC /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B0AF9E6B1A81C816001926BC /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				INFOPLIST_FILE = dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +419,7 @@
 				B0AF9E7D1A81C816001926BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0AF9E7E1A81C816001926BC /* Build configuration list for PBXNativeTarget "dropboxTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +428,7 @@
 				B0AF9E801A81C816001926BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
