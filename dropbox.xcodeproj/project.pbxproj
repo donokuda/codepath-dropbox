@@ -20,6 +20,7 @@
 		B0AF9E781A81C816001926BC /* dropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AF9E771A81C816001926BC /* dropboxTests.swift */; };
 		B0C46C6A1A86A7A60097A630 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C46C691A86A7A60097A630 /* CreateAccountRootViewController.swift */; };
 		B0C46C6C1A86A7E60097A630 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C46C6B1A86A7E60097A630 /* SignInRootViewController.swift */; };
+		B0D9F7E71A8860E80050FFFE /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D9F7E61A8860E80050FFFE /* PhotosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B0AF9E771A81C816001926BC /* dropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropboxTests.swift; sourceTree = "<group>"; };
 		B0C46C691A86A7A60097A630 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		B0C46C6B1A86A7E60097A630 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
+		B0D9F7E61A8860E80050FFFE /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		B0AF9E531A81C816001926BC = {
 			isa = PBXGroup;
 			children = (
+				B0D9F7E61A8860E80050FFFE /* PhotosViewController.swift */,
 				B0AF9E5E1A81C816001926BC /* dropbox */,
 				B0AF9E741A81C816001926BC /* dropboxTests */,
 				B0AF9E5D1A81C816001926BC /* Products */,
@@ -233,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B04CCCE71A86AF9E00E425BA /* CreateAccountViewController.swift in Sources */,
+				B0D9F7E71A8860E80050FFFE /* PhotosViewController.swift in Sources */,
 				B0C46C6C1A86A7E60097A630 /* SignInRootViewController.swift in Sources */,
 				B04CCCE91A86B2A100E425BA /* SignInViewController.swift in Sources */,
 				B0C46C6A1A86A7A60097A630 /* CreateAccountRootViewController.swift in Sources */,

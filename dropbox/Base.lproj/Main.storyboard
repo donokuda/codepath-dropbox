@@ -620,13 +620,13 @@
         <!--Photos-->
         <scene sceneID="INF-ym-zJq">
             <objects>
-                <viewController id="RPT-ia-9kO" sceneMemberID="viewController">
+                <viewController id="RPT-ia-9kO" customClass="PhotosViewController" customModule="dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICo-VO-XLT">
                         <rect key="frame" x="0.0" y="64" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="U0x-IB-1vC">
-                                <rect key="frame" x="0.0" y="46" width="320" height="522"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="existing_photos" id="Odu-1p-NDH">
@@ -639,6 +639,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="uIj-w3-X2C"/>
+                    <connections>
+                        <outlet property="photosScrollView" destination="U0x-IB-1vC" id="Xly-IO-Cl9"/>
+                        <outlet property="photosView" destination="Odu-1p-NDH" id="U6X-gW-2LJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xN4-x5-mJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
