@@ -226,6 +226,10 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onFieldEdit:" destination="DI4-Xg-NMl" eventType="editingDidEnd" id="YCR-XK-CV9"/>
+                                    <action selector="onFieldEdit:" destination="DI4-Xg-NMl" eventType="editingChanged" id="prD-Ro-cic"/>
+                                </connections>
                             </textField>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Appleseed" minimumFontSize="17" id="T7m-Ir-ibK">
                                 <rect key="frame" x="116" y="132" width="192" height="30"/>
@@ -233,6 +237,9 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onFieldEdit:" destination="DI4-Xg-NMl" eventType="editingDidEnd" id="xhh-Kp-zoF"/>
+                                </connections>
                             </textField>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" minimumFontSize="17" id="KF5-Xn-rUx">
                                 <rect key="frame" x="116" y="176" width="192" height="30"/>
@@ -240,6 +247,9 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="onFieldEdit:" destination="DI4-Xg-NMl" eventType="editingChanged" id="NAa-SY-zRi"/>
+                                </connections>
                             </textField>
                             <view hidden="YES" contentMode="scaleToFill" id="sVz-Rn-1fA">
                                 <rect key="frame" x="0.0" y="250" width="320" height="44"/>
@@ -275,6 +285,24 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" id="aZo-ir-am2">
+                                <rect key="frame" x="253" y="32" width="62" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uTu-op-dss">
+                                        <rect key="frame" x="0.0" y="-3" width="62" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Create">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="caE-pk-5GC" kind="modal" animates="NO" id="qp1-sf-0Nz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803926" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Required" minimumFontSize="17" id="eBg-7c-blc">
                                 <rect key="frame" x="116" y="220" width="192" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -290,8 +318,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="rLn-xB-yVT"/>
                     <connections>
+                        <outlet property="createButton" destination="uTu-op-dss" id="B8k-jS-A8Q"/>
+                        <outlet property="emailField" destination="KF5-Xn-rUx" id="YOp-WW-58b"/>
+                        <outlet property="firstNameField" destination="khr-d0-VkV" id="X6g-0g-Dw7"/>
                         <outlet property="goodPassIndicator" destination="SvX-fg-79q" id="hk2-Vg-tFK"/>
                         <outlet property="greatPassIndicator" destination="ttO-ur-yss" id="dyQ-oq-vPC"/>
+                        <outlet property="lastNameField" destination="T7m-Ir-ibK" id="f1z-jI-e5H"/>
                         <outlet property="okPassIndicator" destination="Vl8-LK-dxR" id="FjX-Pt-ucx"/>
                         <outlet property="passwordField" destination="eBg-7c-blc" id="0lg-lM-XCO"/>
                         <outlet property="passwordHintText" destination="vJG-D1-4Bw" id="6hy-9u-ycV"/>
@@ -301,7 +333,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IUQ-PO-Xre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2516" y="489"/>
+            <point key="canvasLocation" x="2450" y="532"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="c0z-wb-Hfg">
@@ -734,7 +766,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9aQ-rF-zZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4295" y="489"/>
+            <point key="canvasLocation" x="2917" y="537"/>
         </scene>
         <!--Terms View Controller-->
         <scene sceneID="jXz-Fk-lfw">

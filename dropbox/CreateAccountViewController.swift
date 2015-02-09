@@ -12,10 +12,14 @@ class CreateAccountViewController: UIViewController {
 
     @IBOutlet weak var backButton: UIButton!
     
+    @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var passwordHintText: UILabel!
     @IBOutlet weak var passwordHintView: UIView!
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var goodPassIndicator: UIView!
     @IBOutlet weak var greatPassIndicator: UIView!
     @IBOutlet weak var okPassIndicator: UIView!
@@ -24,6 +28,7 @@ class CreateAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        createButton.enabled = false
         passwordHintView.hidden = true
         goodPassIndicator.hidden = true
         greatPassIndicator.hidden = true
@@ -104,6 +109,24 @@ class CreateAccountViewController: UIViewController {
             greatPassIndicator.backgroundColor = greatColor
             passwordHintText.textColor = greatColor
             passwordHintText.text = "Great!"
+        }
+        
+        checkFields()
+    }
+    
+    
+    @IBAction func onFieldEdit(sender: AnyObject) {
+        checkFields()
+    }
+    
+    func checkFields() {
+        if (passwordField.text.isEmpty ||
+            firstNameField.text.isEmpty ||
+            lastNameField.text.isEmpty ||
+            emailField.text.isEmpty) {
+                createButton.enabled = false
+        } else {
+            createButton.enabled = true
         }
     }
 }
