@@ -129,4 +129,7 @@ class CreateAccountViewController: UIViewController {
             createButton.enabled = true
         }
     }
+    @IBAction func dismissKeyboard(sender: AnyObject) {
+        self.view.endEditing(true)
+    }
 }
